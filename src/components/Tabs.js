@@ -18,7 +18,7 @@ function Tabs() {
     // set text
     homeTab.textContent = "Home"
     menuTab.textContent = "Menu"
-    contactTab.textContent = "Contact Us"
+    contactTab.textContent = "Contact"
 
     // append child nodes to parent node
     nav.append(homeTab, menuTab, contactTab)

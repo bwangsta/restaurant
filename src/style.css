@@ -4,9 +4,51 @@
   box-sizing: border-box;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tabs>* {
+  border: none;
+  font-size: 1.5rem;
 }
 
 .contact-card-img {
