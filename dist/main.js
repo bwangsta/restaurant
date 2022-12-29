@@ -130,6 +130,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/Footer.js":
+/*!**********************************!*\
+  !*** ./src/components/Footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction Footer() {\n    /*\n    <footer>\n        <p>Copyright &copy; 2022 Brian Wang @bwangsta</p>\n    </footer>\n    */\n    const footer = document.createElement(\"footer\")\n    const copyright = document.createElement(\"p\")\n\n    copyright.textContent = \"Copyright © 2022 Brian Wang @bwangsta\"\n\n    footer.append(copyright)\n\n    return footer\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);\n\n//# sourceURL=webpack://restaurant/./src/components/Footer.js?");
+
+/***/ }),
+
 /***/ "./src/components/Home.js":
 /*!********************************!*\
   !*** ./src/components/Home.js ***!
@@ -166,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction Navbar() {\n    // create HTML elements\n    const nav = document.createElement(\"nav\")\n    const ul = document.createElement(\"ul\")\n    const homeLi = document.createElement(\"li\")\n    const menuLi = document.createElement(\"li\")\n    const contactLi = document.createElement(\"li\")\n\n    // set text\n    homeLi.textContent = \"Home\"\n    menuLi.textContent = \"Menu\"\n    contactLi.textContent = \"Contact Us\"\n\n    // append child nodes to parent node\n    ul.append(homeLi, menuLi, contactLi)\n    nav.append(ul)\n\n    // add class to nodes\n    nav.className = \"navbar\"\n\n    return nav\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);\n\n//# sourceURL=webpack://restaurant/./src/components/Navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction Navbar() {\n    // create HTML elements\n    const header = document.createElement(\"header\")\n    const nav = document.createElement(\"nav\")\n    const ul = document.createElement(\"ul\")\n    const homeLi = document.createElement(\"li\")\n    const menuLi = document.createElement(\"li\")\n    const contactLi = document.createElement(\"li\")\n\n    // set text\n    homeLi.textContent = \"Home\"\n    menuLi.textContent = \"Menu\"\n    contactLi.textContent = \"Contact Us\"\n\n    // append child nodes to parent node\n    ul.append(homeLi, menuLi, contactLi)\n    nav.append(ul)\n    header.append(nav)\n\n    // add class to nodes\n    nav.className = \"navbar\"\n\n    return header\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);\n\n//# sourceURL=webpack://restaurant/./src/components/Navbar.js?");
 
 /***/ }),
 
@@ -186,7 +196,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Navbar */ \"./src/components/Navbar.js\");\n/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Home */ \"./src/components/Home.js\");\n/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Menu */ \"./src/components/Menu.js\");\n/* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Contact */ \"./src/components/Contact.js\");\n\n\n\n\n\nfunction initialLoad() {\n    const header = document.querySelector(\"header\")\n    const main = document.querySelector(\"main\")\n    header.append((0,_components_Navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n    main.append(\n        (0,_components_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(),\n        (0,_components_Menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(),\n        (0,_components_Contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\n    )\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n//# sourceURL=webpack://restaurant/./src/initialLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Navbar */ \"./src/components/Navbar.js\");\n/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Home */ \"./src/components/Home.js\");\n/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Menu */ \"./src/components/Menu.js\");\n/* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Contact */ \"./src/components/Contact.js\");\n/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Footer */ \"./src/components/Footer.js\");\n\n\n\n\n\n\nfunction initialLoad() {\n    const main = document.querySelector(\"main\")\n\n    document.body.prepend((0,_components_Navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n    main.append(\n        (0,_components_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(),\n        (0,_components_Menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(),\n        (0,_components_Contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(),\n        (0,_components_Footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])()\n    )\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n//# sourceURL=webpack://restaurant/./src/initialLoad.js?");
 
 /***/ }),
 

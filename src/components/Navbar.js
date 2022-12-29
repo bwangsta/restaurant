@@ -1,5 +1,6 @@
 function Navbar() {
     // create HTML elements
+    const header = document.createElement("header")
     const nav = document.createElement("nav")
     const ul = document.createElement("ul")
     const homeLi = document.createElement("li")
@@ -14,11 +15,12 @@ function Navbar() {
     // append child nodes to parent node
     ul.append(homeLi, menuLi, contactLi)
     nav.append(ul)
+    header.append(nav)
 
     // add class to nodes
     nav.className = "navbar"
 
-    return nav
+    return header
 }
 
 export default Navbar

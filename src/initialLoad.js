@@ -2,15 +2,17 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import Menu from "./components/Menu"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function initialLoad() {
-    const header = document.querySelector("header")
     const main = document.querySelector("main")
-    header.append(Navbar())
+
+    document.body.prepend(Navbar())
     main.append(
         Home(),
         Menu(),
-        Contact()
+        Contact(),
+        Footer()
     )
 }
 
