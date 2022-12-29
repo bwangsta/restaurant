@@ -1,7 +1,5 @@
 import Tabs from "./components/Tabs"
 import Home from "./components/Home"
-import Menu from "./components/Menu"
-import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
 function initialLoad() {
@@ -9,11 +7,9 @@ function initialLoad() {
 
     document.body.prepend(Tabs())
     main.append(
-        Home(),
-        Menu(),
-        Contact(),
-        Footer()
+        Home()
     )
+    document.body.append(Footer())
 }
 
 export default initialLoad
