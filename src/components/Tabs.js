@@ -25,6 +25,9 @@ function Tabs() {
     header.append(nav)
 
     // add class to nodes
+    homeTab.className = "home-tab"
+    menuTab.className = "menu-tab"
+    contactTab.className = "contact-tab"
     nav.className = "tabs"
 
     return header
