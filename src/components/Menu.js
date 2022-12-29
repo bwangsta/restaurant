@@ -14,12 +14,16 @@ function Menu() {
     </section>
     */
     const menu = document.createElement("section")
+    const header = document.createElement("h1")
     const menuGrid = document.createElement("div")
+
+    header.textContent = "Menu"
 
     menu.className = "menu"
     menuGrid.className = "menu-grid"
 
     menuGrid.append(
+        header,
         MenuItem(tigerFishImg, "Grilled Tiger Fish", 1250),
         MenuItem(dragonBeardNoodlesImg, "Dragon Beard Noodles", 5000),
         MenuItem(mintyMeatRollsImg, "Minty Meat Rolls", 5000)
