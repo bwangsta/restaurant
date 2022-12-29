@@ -7,7 +7,7 @@ import MenuItem from "./MenuItem"
 function Menu() {
     /*
     <section class="menu">
-      <h1>Menu</h1>
+      <h1 class="header">Menu</h1>
       <div class="menu-grid">
         <MenuItem />
       </div>
@@ -21,6 +21,7 @@ function Menu() {
 
     menu.className = "menu"
     menuGrid.className = "menu-grid"
+    header.className = "header"
 
     menuGrid.append(
         MenuItem(tigerFishImg, "Grilled Tiger Fish", 1250),

@@ -6,7 +6,7 @@ import ContactItem from "./ContactItem"
 function Contact() {
     /*
     <section class="contact">
-      <h1>Contact Us</h1>
+      <h1 class="header">Contact Us</h1>
       <ContactItem />
     </section>
     */
@@ -19,6 +19,7 @@ function Contact() {
 
     // add class
     contact.className = "contact"
+    header.className = "header"
 
     // append/prepend
     contact.append(
