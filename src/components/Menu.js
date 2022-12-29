@@ -23,12 +23,11 @@ function Menu() {
     menuGrid.className = "menu-grid"
 
     menuGrid.append(
-        header,
         MenuItem(tigerFishImg, "Grilled Tiger Fish", 1250),
         MenuItem(dragonBeardNoodlesImg, "Dragon Beard Noodles", 5000),
         MenuItem(mintyMeatRollsImg, "Minty Meat Rolls", 5000)
     )
-    menu.append(menuGrid)
+    menu.append(header, menuGrid)
 
     return menu
 }
