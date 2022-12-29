@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_chef_mao_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/chef-mao.webp */ \"./src/img/chef-mao.webp\");\n/* harmony import */ var _img_xiangling_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/xiangling.jpg */ \"./src/img/xiangling.jpg\");\n/* harmony import */ var _ContactItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ContactItem */ \"./src/components/ContactItem.js\");\n\n\n\n\n\nfunction Contact() {\n    /*\n    <section class=\"contact\">\n      <h1 class=\"header\">Contact Us</h1>\n      <ContactItem />\n    </section>\n    */\n    // create HTML element\n    const contact = document.createElement(\"section\")\n    const header = document.createElement(\"h1\")\n\n    // add text\n    header.textContent = \"Contact Us\"\n\n    // add class\n    contact.className = \"contact\"\n    header.className = \"header\"\n\n    // append/prepend\n    contact.append(\n        header,\n        (0,_ContactItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_img_chef_mao_webp__WEBPACK_IMPORTED_MODULE_0__, \"Chef Mao\", \"(123)-456-7890\", \"chefmao@genshinimpact.com\"),\n        (0,_ContactItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_img_xiangling_jpg__WEBPACK_IMPORTED_MODULE_1__, \"Xiangling\", \"(890)-567-1234\", \"xiangling@genshinimpact.com\")\n    )\n\n    return contact\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);\n\n//# sourceURL=webpack://restaurant/./src/components/Contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _img_chef_mao_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/chef-mao.webp */ \"./src/img/chef-mao.webp\");\n/* harmony import */ var _img_xiangling_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/xiangling.jpg */ \"./src/img/xiangling.jpg\");\n/* harmony import */ var _img_guoba_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/guoba.webp */ \"./src/img/guoba.webp\");\n/* harmony import */ var _ContactItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ContactItem */ \"./src/components/ContactItem.js\");\n\n\n\n\n\n\nfunction Contact() {\n    /*\n    <section class=\"contact\">\n      <h1 class=\"header\">Contact Us</h1>\n      <ContactItem />\n    </section>\n    */\n    // create HTML element\n    const contact = document.createElement(\"section\")\n    const header = document.createElement(\"h1\")\n\n    // add text\n    header.textContent = \"Contact Us\"\n\n    // add class\n    contact.className = \"contact\"\n    header.className = \"header\"\n\n    // append/prepend\n    contact.append(\n        header,\n        (0,_ContactItem__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(_img_chef_mao_webp__WEBPACK_IMPORTED_MODULE_0__, \"Chef Mao\", \"(123)-456-7890\", \"chefmao@genshinimpact.com\"),\n        (0,_ContactItem__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(_img_xiangling_jpg__WEBPACK_IMPORTED_MODULE_1__, \"Xiangling\", \"(890)-567-1234\", \"xiangling@genshinimpact.com\"),\n        (0,_ContactItem__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(_img_guoba_webp__WEBPACK_IMPORTED_MODULE_2__, \"Guoba\", \"(747)-698-0450\", \"guoba@genshinimpact.com\")\n    )\n\n    return contact\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);\n\n//# sourceURL=webpack://restaurant/./src/components/Contact.js?");
 
 /***/ }),
 
@@ -237,6 +237,16 @@ eval("module.exports = __webpack_require__.p + \"921f1de35990a24004a9.webp\";\n\
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"fc84609644fb1e724201.webp\";\n\n//# sourceURL=webpack://restaurant/./src/img/grilled-tiger-fish.webp?");
+
+/***/ }),
+
+/***/ "./src/img/guoba.webp":
+/*!****************************!*\
+  !*** ./src/img/guoba.webp ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"62e9553127b45d4a5c8a.webp\";\n\n//# sourceURL=webpack://restaurant/./src/img/guoba.webp?");
 
 /***/ }),
 
