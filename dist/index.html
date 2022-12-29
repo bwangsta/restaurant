@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant</title>
+  <title>Wanmin Restaurant</title>
   <script src="main.js"></script>
+  <link rel="stylesheet" href="../src/styles.css">
 </head>
+
 <body>
-  <div id="content"></div>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <section class="home">
+      <h1>Wanmin Restaurant</h1>
+      <img src="../src/img/wanmin-restaurant.webp" alt="Wanmin Restaurant">
+    </section>
+
+    <section class="menu">
+      <article class="menu-card">
+        <img src="../src/img/grilled-tiger-fish.webp" alt="Grilled Tiger Fish" class="menu-card-img">
+        <div class="menu-card-description">
+          <p class="menu-card-title">Grilled Tiger Fish</p>
+          <p class="menu-card-price">1,250 Mora</p>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../src/img/dragon-beard-noodles.webp" alt="Dragon Beard Noodles" class="menu-card-img">
+        <div class="menu-card-description">
+          <p class="menu-card-title">Dragon Beard Noodles</p>
+          <p class="menu-card-price">5,000 Mora</p>
+        </div>
+      </article>
+      <article class="menu-card">
+        <img src="../src/img/minty-meat-rolls.webp" alt="Minty Meat Rolls" class="menu-card-img">
+        <div class="menu-card-description">
+          <p class="menu-card-title">Minty Meat Rolls</p>
+          <p class="menu-card-price">5,000 Mora</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact">
+      <article class="contact-card">
+        <img src="../src/img/chef-mao.webp" alt="" class="contact-card-img">
+        <div class="contact-card-description">
+          <p class="contact-card-name">Chef Mao</p>
+          <p class="contact-card-number">(123)-456-7890</p>
+          <p class="contact-card-email">chefmao@genshinimpact.com</p>
+        </div>
+      </article>
+      <article class="contact-card">
+        <img src="../src/img/xiangling.jpg" alt="" class="contact-card-img">
+        <div class="contact-card-description">
+          <p class="contact-card-name">Xiangling</p>
+          <p class="contact-card-number">(890)-567-1234</p>
+          <p class="contact-card-email">xiangling@genshinimpact.com</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <p>Created by Brian Wang @bwangsta</p>
+  </footer>
 </body>
+
 </html>
