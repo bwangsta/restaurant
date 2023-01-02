@@ -1,5 +1,5 @@
 import chefMaoImg from "../img/chef-mao.webp"
-import xianglingImg from "../img/xiangling.jpg"
+import xianglingImg from "../img/xiangling.webp"
 import guobaImg from "../img/guoba.webp"
 
 import ContactItem from "./ContactItem"
