@@ -1,4 +1,4 @@
-import wanminImg from "../img/wanmin-restaurant.webp"
+import wanminImg from "../assets/img/wanmin-restaurant.webp"
 
 function Home() {
     /*

@@ -1,6 +1,6 @@
-import chefMaoImg from "../img/chef-mao.webp"
-import xianglingImg from "../img/xiangling.webp"
-import guobaImg from "../img/guoba.webp"
+import chefMaoImg from "../assets/img/chef-mao.webp"
+import xianglingImg from "../assets/img/xiangling.webp"
+import guobaImg from "../assets/img/guoba.webp"
 
 import ContactItem from "./ContactItem"
 

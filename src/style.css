@@ -40,6 +40,10 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.logo {
+  width: 3rem;
+}
+
 .tabs {
   display: flex;
   justify-content: center;

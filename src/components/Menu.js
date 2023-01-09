@@ -1,6 +1,6 @@
-import tigerFishImg from "../img/grilled-tiger-fish.webp"
-import dragonBeardNoodlesImg from "../img/dragon-beard-noodles.webp"
-import mintyMeatRollsImg from "../img/minty-meat-rolls.webp"
+import tigerFishImg from "../assets/img/grilled-tiger-fish.webp"
+import dragonBeardNoodlesImg from "../assets/img/dragon-beard-noodles.webp"
+import mintyMeatRollsImg from "../assets/img/minty-meat-rolls.webp"
 
 import MenuItem from "./MenuItem"
 
