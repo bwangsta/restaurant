@@ -3,11 +3,11 @@
   margin-bottom: 0.5rem;
 }
 
-.logo {
+.navbar--logo {
   width: 3rem;
 }
 
-.tabs {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,7 @@
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tabs>* {
-  border: none;
+.navbar>* {
   font-size: clamp(1rem, 3vw, 1.5rem);
 }
 

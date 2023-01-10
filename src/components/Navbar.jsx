@@ -4,14 +4,14 @@ import guobaLogo from "../assets/img/guoba-logo.svg"
 function Navbar() {
     return (
         <header>
-            <nav className="tabs">
-                <Link to="/" className="home-tab">
-                    <img src={guobaLogo} alt="Wanmin Restaurant Logo" className="logo"></img>
+            <nav className="navbar">
+                <Link to="/">
+                    <img src={guobaLogo} alt="Wanmin Restaurant Logo" className="navbar--logo"></img>
                 </Link>
-                <Link to="/menu" className="menu-tab">
+                <Link to="/menu">
                     Menu
                 </Link>
-                <Link to="/contact" className="contact-tab">
+                <Link to="/contact">
                     Contact Us
                 </Link>
             </nav>
