@@ -10,6 +10,7 @@ function Searchbar(props: { query: string, handleInputChange: (e: ChangeEvent<HT
         className="search__input"
         value={props.query}
         onChange={(e) => props.handleInputChange(e)}
+        placeholder="Search..."
       />
     </div>
   )

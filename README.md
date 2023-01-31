@@ -26,8 +26,8 @@ WIP
 
 ## Roadmap
 - [x] Get menu data from a separate file and display all menu items
-- [ ] Add search bar to filter menu items
-- [ ] Add a takeout page where users can add items to cart and checkout
+- [x] Add search bar to filter menu items
+- [x] Add a checkout where users can add items to cart and remove items from cart
 - [ ] Create a database that stores each menu item and the number of times a user "bought" it
 - [ ] Display most popular dishes on home page based on the data
 

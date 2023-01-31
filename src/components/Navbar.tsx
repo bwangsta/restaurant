@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BsCart3 } from "react-icons/bs"
 import guobaLogo from "../assets/img/guoba-logo.svg"
 
 function Navbar() {
@@ -19,6 +20,7 @@ function Navbar() {
             Contact
           </Link>
         </div>
+        <BsCart3 className="nav__icon" />
       </nav>
     </header>
   )
