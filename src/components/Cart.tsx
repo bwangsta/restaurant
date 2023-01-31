@@ -28,7 +28,7 @@ function Cart(props: {
 
   return (
     <div className="cart">
-      <h1>Checkout Component</h1>
+      <h1>Cart Component</h1>
       <ul className="cart__items">
         {cartItems}
       </ul>

@@ -1,59 +1,38 @@
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useReducer, useState } from "react"
 import MenuItem from "../components/MenuItem"
 import Searchbar from "../components/Searchbar"
 import Cart from "../components/Cart"
 import data from "../data"
+import cartReducer from "../cartReducer"
 
 
 function Menu() {
   const [items] = useState(data)
-  const [cart, setCart] = useState(items)
+  const [cart, dispatch] = useReducer(cartReducer, items)
   const [query, setQuery] = useState("")
-  const [showCheckout, setShowCheckout] = useState(true)
 
   const filteredItems = items.filter(item => {
     return item.name.toLowerCase().includes(query.toLowerCase())
   })
 
   function addToCart(id: number) {
-    // if item is already in cart, update the amount 
-    // otherwise add item to cart
-    setShowCheckout(true)
-    setCart(prevCart => {
-      return prevCart.map(item => {
-        if (item.id === id) {
-          return { ...item, amount: item.amount + 1 }
-        }
-        else {
-          return item
-        }
-      })
+    dispatch({
+      type: "add",
+      id: id,
     })
   }
 
   function removeFromCart(id: number) {
-    setCart(prevCart => {
-      return prevCart.map(item => {
-        if (item.id === id) {
-          return { ...item, amount: item.amount - 1 }
-        }
-        else {
-          return item
-        }
-      })
+    dispatch({
+      type: "remove",
+      id: id,
     })
   }
 
   function clearCart(id: number) {
-    setCart(prevCart => {
-      return prevCart.map(item => {
-        if (item.id === id) {
-          return { ...item, amount: 0 }
-        }
-        else {
-          return item
-        }
-      })
+    dispatch({
+      type: "clear",
+      id: id,
     })
   }
 
@@ -64,14 +43,12 @@ function Menu() {
   return (
     <section className="menu">
       <h1 className="header">Menu</h1>
-      {showCheckout &&
-        <Cart
-          cart={cart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-          clearCart={clearCart}
-        />
-      }
+      <Cart
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        clearCart={clearCart}
+      />
       <Searchbar query={query} handleInputChange={handleInputChange} />
       {filteredItems.length === 0 ?
         <p className="search-error">No results found</p>
