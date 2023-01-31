@@ -25,7 +25,7 @@ In order to setup and work on this project on your own, you will need to:
 WIP
 
 ## Roadmap
-- [ ] Get menu data from a JSON file and display all menu items
+- [x] Get menu data from a separate file and display all menu items
 - [ ] Add search bar to filter menu items
 - [ ] Add a takeout page where users can add items to cart and checkout
 - [ ] Create a database that stores each menu item and the number of times a user "bought" it
@@ -33,3 +33,4 @@ WIP
 
 ## Acknowledgements
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Genshin Impact Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)

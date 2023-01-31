@@ -1,0 +1,80 @@
+export default [
+  {
+    id: 1,
+    name: "Grilled Tiger Fish",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Grilled_Tiger_Fish.png",
+    price: 1250
+  },
+  {
+    id: 2,
+    name: "Rice Buns",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Item_Rice_Buns.png",
+    price: 1250
+  },
+  {
+    id: 3,
+    name: "Jueyun Chili Chicken",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Item_Jueyun_Chili_Chicken.png",
+    price: 2500
+  },
+  {
+    id: 4,
+    name: "Crystal Shrimp",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Item_Crystal_Shrimp.png",
+    price: 2500
+  },
+  {
+    id: 5,
+    name: "Mint Salad",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Mint_Salad.png",
+    price: 2500
+  },
+  {
+    id: 6,
+    name: "Crab Roe Tofu",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Item_Crab_Roe_Tofu.png",
+    price: 2500
+  },
+  {
+    id: 7,
+    name: "Black-Back Perch Stew",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Item_Black-Back_Perch_Stew.png",
+    price: 5000
+  },
+  {
+    id: 8,
+    name: "Squirrel Fish",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Item_Squirrel_Fish.png",
+    price: 5000
+  },
+  {
+    id: 9,
+    name: "Come and Get It",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Item_Come_and_Get_It.png",
+    price: 5000
+  },
+  {
+    id: 10,
+    name: "Triple-Layered Consommé",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/b/be/Item_Triple-Layered_Consomm%C3%A9.png",
+    price: 5000
+  },
+  {
+    id: 11,
+    name: "Universal Peace",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Item_Universal_Peace.png",
+    price: 5000
+  },
+  {
+    id: 12,
+    name: "Minty Meat Rolls",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Item_Minty_Meat_Rolls.png",
+    price: 5000
+  },
+  {
+    id: 13,
+    name: "Dragon Beard Noodles",
+    img: "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dragon_Beard_Noodles.png",
+    price: 5000
+  },
+]
