@@ -3,6 +3,7 @@ This project was inspired from The Odin Project Javascript Restaurant Project. T
 
 ## Built With 
 - React
+- Typescript
 
 ## Live Preview
 WIP
