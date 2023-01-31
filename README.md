@@ -32,5 +32,4 @@ WIP
 - [ ] Display most popular dishes on home page based on the data
 
 ## Acknowledgements
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
 - [Genshin Impact Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)
