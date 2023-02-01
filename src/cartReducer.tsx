@@ -1,6 +1,6 @@
-import { Item } from "./types"
+import { CartAction, Item } from "./types"
 
-function cartReducer(cart: Item[], action: { type: string, id: number }) {
+function cartReducer(cart: Item[], action: CartAction) {
   switch (action.type) {
     case "add": {
       return cart.map(item => {
@@ -18,12 +18,17 @@ function cartReducer(cart: Item[], action: { type: string, id: number }) {
         return item
       })
     }
-    case "clear": {
+    case "remove_all": {
       return cart.map(item => {
         if (item.id === action.id) {
           return { ...item, amount: 0 }
         }
         return item
+      })
+    }
+    case "clear": {
+      return cart.map(item => {
+        return { ...item, amount: 0 }
       })
     }
     default: {

@@ -5,3 +5,8 @@ export type Item = {
   price: number,
   amount: number
 }
+
+export type CartAction = {
+  type: string,
+  id: number
+}

@@ -24,6 +24,10 @@
   margin: 0 1rem;
 }
 
+.nav__icon {
+  font-size: 1.5em;
+}
+
 .searchbar {
   display: grid;
   grid-template-areas: "searchbar";
