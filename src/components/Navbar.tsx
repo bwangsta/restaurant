@@ -20,7 +20,9 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        <BsCart3 className="nav__icon" />
+        <Link to="/checkout">
+          <BsCart3 className="nav__icon" />
+        </Link>
       </nav>
     </header>
   )

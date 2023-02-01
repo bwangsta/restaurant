@@ -1,26 +1,18 @@
+import { useContext } from "react"
+import { CartContext } from "../CartContext"
 import CartItem from "./CartItem"
 
-import { Item } from "../types"
-
-function Cart(props: {
-  cart: Item[],
-  addToCart: (id: number) => void,
-  removeFromCart: (id: number) => void,
-  clearCart: (id: number) => void
-}
-) {
+function Cart() {
+  const cart = useContext(CartContext)
   let totalPrice = 0
 
-  const cartItems = props.cart.map(item => {
+  const cartItems = cart.map(item => {
     if (item.amount > 0) {
       totalPrice += item.price * item.amount
       return (
         <CartItem
           key={item.id}
           item={item}
-          addToCart={props.addToCart}
-          removeFromCart={props.removeFromCart}
-          clearCart={props.clearCart}
         />
       )
     }
@@ -28,7 +20,6 @@ function Cart(props: {
 
   return (
     <div className="cart">
-      <h1>Cart Component</h1>
       <ul className="cart__items">
         {cartItems}
       </ul>
