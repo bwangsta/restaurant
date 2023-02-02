@@ -5,7 +5,7 @@ import guobaLogo from "../assets/img/guoba-logo.svg"
 function Navbar() {
   return (
     <header>
-      <nav className="navbar">
+      <nav className="navbar container">
         <Link to="/" className="navbar__logo">
           <img src={guobaLogo} alt="Wanmin Restaurant Logo" className="logo"></img>
         </Link>

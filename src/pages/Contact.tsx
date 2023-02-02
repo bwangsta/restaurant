@@ -6,7 +6,7 @@ import ContactItem from "../components/ContactItem"
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact container">
       <h1 className="header">Contact Us</h1>
       <div className="contact-grid">
         <ContactItem
