@@ -33,25 +33,24 @@
 }
 
 .searchbar {
-  display: grid;
-  grid-template-areas: "searchbar";
+  display: flex;
   align-items: center;
-  padding: 3rem 0;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 40rem;
 }
 
 .search__icon {
-  grid-area: searchbar;
-  z-index: 10;
   margin-left: 1rem;
 }
 
 .search__input {
-  grid-area: searchbar;
+  flex: 1;
   border-radius: 1rem;
   padding: 0.5rem;
-  text-indent: 2rem;
   outline: none;
-  border: 2px solid black;
+  border: none;
 }
 
 .search-error {

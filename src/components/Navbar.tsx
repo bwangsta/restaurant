@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { BsCart3 } from "react-icons/bs"
+import { HiOutlineShoppingCart } from "react-icons/hi"
 import guobaLogo from "../assets/img/guoba-logo.svg"
 
 function Navbar() {
@@ -21,7 +21,7 @@ function Navbar() {
           </Link>
         </div>
         <Link to="/checkout">
-          <BsCart3 className="nav__icon" />
+          <HiOutlineShoppingCart className="nav__icon" />
         </Link>
       </nav>
     </header>
