@@ -19,7 +19,10 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
         </div>
         <Link to="/checkout">
-          <HiOutlineShoppingCart className="text-2xl" />
+          <div className="indicator">
+            <HiOutlineShoppingCart className="text-2xl" />
+            <span className="badge badge-sm indicator-item">8</span>
+          </div>
         </Link>
       </nav>
     </header>

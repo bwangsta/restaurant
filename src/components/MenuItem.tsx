@@ -12,7 +12,7 @@ function MenuItem(props: {
   return (
     <article className="flex flex-col items-center gap-2 rounded-2xl p-4 text-center shadow-3xl">
       <button
-        className="self-end rounded-lg border-none px-2 text-2xl shadow-3xl"
+        className="btn-circle btn self-end border-none bg-gray-200 px-4 text-2xl text-black shadow-3xl hover:bg-white"
         onClick={() => dispatch({ type: "add", id: props.id })}
       >
         +

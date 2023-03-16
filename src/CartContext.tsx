@@ -1,10 +1,13 @@
-import React, { createContext, useReducer } from "react"
+import React, { createContext, useReducer, useState } from "react"
 import data from "./data"
 import { Item } from "./types"
 import cartReducer from "./cartReducer"
 
 const CartContext = createContext<Item[]>([])
-const CartDispatchContext = createContext<React.Dispatch<{ type: string, id: number }> | null>(null)
+const CartDispatchContext = createContext<React.Dispatch<{
+  type: string
+  id: number
+}> | null>(null)
 
 function CartProvider(props: { children: React.ReactNode }) {
   const [cart, dispatch] = useReducer(cartReducer, data)

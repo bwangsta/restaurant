@@ -20,12 +20,12 @@ function Cart() {
       <ul>{cartItems}</ul>
       <p>Total: {totalPrice} Mora</p>
       <button
-        className="border-2"
+        className="btn-sm btn"
         onClick={() => dispatch({ type: "clear", id: 0 })}
       >
         Clear
       </button>
-      <button className="border-2">Place Order</button>
+      <button className="btn-sm btn">Place Order</button>
     </div>
   )
 }

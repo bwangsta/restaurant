@@ -7,6 +7,7 @@ This project was inspired from The Odin Project Javascript Restaurant Project. T
 - React
 - Typescript
 - TailwindCSS
+- daisyUI
 
 ## Live Preview
 
