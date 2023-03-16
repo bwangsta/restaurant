@@ -2,8 +2,8 @@ import wanminImg from "../assets/img/wanmin-restaurant.webp"
 
 function Home() {
   return (
-    <section className="">
-      <h1>Wanmin Restaurant</h1>
+    <section>
+      <h1 className="text-2xl">Wanmin Restaurant</h1>
       <img src={wanminImg} alt="Wanmin Restaurant"></img>
     </section>
   )

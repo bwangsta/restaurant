@@ -8,26 +8,24 @@ function Cart() {
 
   let totalPrice = 0
 
-  const cartItems = cart.map(item => {
+  const cartItems = cart.map((item) => {
     if (item.amount > 0) {
       totalPrice += item.price * item.amount
-      return (
-        <CartItem
-          key={item.id}
-          item={item}
-        />
-      )
+      return <CartItem key={item.id} item={item} />
     }
   })
 
   return (
-    <div className="cart">
-      <ul className="cart__items">
-        {cartItems}
-      </ul>
-      <p className="cart__total">Total: {totalPrice} Mora</p>
-      <button onClick={() => dispatch({ type: "clear", id: 0 })}>Clear</button>
-      <button className="order-btn">Place Order</button>
+    <div>
+      <ul>{cartItems}</ul>
+      <p>Total: {totalPrice} Mora</p>
+      <button
+        className="border-2"
+        onClick={() => dispatch({ type: "clear", id: 0 })}
+      >
+        Clear
+      </button>
+      <button className="border-2">Place Order</button>
     </div>
   )
 }

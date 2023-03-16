@@ -22,7 +22,7 @@ function Menu() {
       {filteredItems.length === 0 ? (
         <p className="text-center">No results found</p>
       ) : (
-        <div className="grid grid-cols-fluid justify-center gap-4">
+        <div className="grid grid-cols-fluid justify-center gap-8">
           {filteredItems.map((item) => {
             return (
               <MenuItem

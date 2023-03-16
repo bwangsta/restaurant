@@ -5,7 +5,7 @@ import guobaLogo from "../assets/img/guoba-logo.svg"
 function Navbar() {
   return (
     <header>
-      <nav className="flex items-center justify-center p-4">
+      <nav className="flex items-center justify-center py-4">
         <Link to="/">
           <img
             src={guobaLogo}

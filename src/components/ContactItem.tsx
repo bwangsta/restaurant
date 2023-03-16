@@ -5,7 +5,7 @@ function ContactItem(props: {
   email: string
 }) {
   return (
-    <article className="contact-card">
+    <article>
       <img
         src={props.img}
         alt="Chef Mao"

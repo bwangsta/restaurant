@@ -12,7 +12,7 @@ function App() {
     <CartProvider>
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4">
         <Navbar />
-        <main id="content" className="flex-1">
+        <main id="content" className="my-4 flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />

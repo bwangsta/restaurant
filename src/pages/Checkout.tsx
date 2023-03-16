@@ -3,7 +3,7 @@ import Cart from "../components/Cart"
 function Checkout() {
   return (
     <section>
-      <h1>Checkout Page</h1>
+      <h1 className="text-2xl">Checkout Page</h1>
       <Cart />
     </section>
   )
