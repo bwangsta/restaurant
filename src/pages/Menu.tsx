@@ -7,7 +7,7 @@ function Menu() {
   const [menuItems] = useState(data)
   const [query, setQuery] = useState("")
 
-  const filteredItems = menuItems.filter(item => {
+  const filteredItems = menuItems.filter((item) => {
     return item.name.toLowerCase().includes(query.toLowerCase())
   })
 
@@ -16,14 +16,14 @@ function Menu() {
   }
 
   return (
-    <section className="menu container">
-      <h1 className="header">Menu</h1>
+    <section>
+      <h1 className="text-3xl">Menu</h1>
       <Searchbar query={query} handleInputChange={handleInputChange} />
-      {filteredItems.length === 0 ?
-        <p className="search-error">No results found</p>
-        :
-        <div className="menu-grid">
-          {filteredItems.map(item => {
+      {filteredItems.length === 0 ? (
+        <p className="text-center">No results found</p>
+      ) : (
+        <div className="grid grid-cols-fluid justify-center gap-4">
+          {filteredItems.map((item) => {
             return (
               <MenuItem
                 key={item.id}
@@ -35,7 +35,7 @@ function Menu() {
             )
           })}
         </div>
-      }
+      )}
     </section>
   )
 }

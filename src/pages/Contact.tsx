@@ -6,9 +6,9 @@ import ContactItem from "../components/ContactItem"
 
 function Contact() {
   return (
-    <section className="contact container">
-      <h1 className="header">Contact Us</h1>
-      <div className="contact-grid">
+    <section>
+      <h1 className="text-3xl">Contact Us</h1>
+      <div className="flex flex-col items-center gap-12">
         <ContactItem
           img={chefMaoImg}
           name="Chef Mao"

@@ -1,11 +1,20 @@
-function ContactItem(props: { img: string, name: string, phoneNumber: string, email: string }) {
+function ContactItem(props: {
+  img: string
+  name: string
+  phoneNumber: string
+  email: string
+}) {
   return (
     <article className="contact-card">
-      <img src={props.img} alt="Chef Mao" className="contact-card-img"></img>
-      <div className="contact-card-description">
-        <p className="contact-card-name">{props.name}</p>
-        <p className="contact-card-number">{props.phoneNumber}</p>
-        <p className="contact-card-email">{props.email}</p>
+      <img
+        src={props.img}
+        alt="Chef Mao"
+        className="aspect-square rounded-2xl object-cover"
+      ></img>
+      <div className="text-center">
+        <p className="text-2xl">{props.name}</p>
+        <p className="text-lg">{props.phoneNumber}</p>
+        <p className="text-lg">{props.email}</p>
       </div>
     </article>
   )

@@ -1,11 +1,12 @@
 # Restaurant
 
-This project was inspired from The Odin Project Javascript Restaurant Project. The purpose of this project was to create a restaurant page.
+This project was inspired from The Odin Project Javascript Restaurant Project. The purpose of this project is to create a restaurant page.
 
 ## Built With
 
 - React
 - Typescript
+- TailwindCSS
 
 ## Live Preview
 
