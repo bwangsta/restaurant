@@ -16,7 +16,7 @@ function Menu() {
   }
 
   return (
-    <section>
+    <section className="mx-auto max-w-4xl">
       <h1 className="text-3xl">Menu</h1>
       <Searchbar query={query} handleInputChange={handleInputChange} />
       {filteredItems.length === 0 ? (

@@ -6,28 +6,26 @@ import ContactItem from "../components/ContactItem"
 
 function Contact() {
   return (
-    <section>
+    <section className="mx-auto max-w-4xl">
       <h1 className="text-3xl">Contact Us</h1>
-      <div className="flex flex-col items-center gap-12">
-        <ContactItem
-          img={chefMaoImg}
-          name="Chef Mao"
-          phoneNumber="(123)-456-7890"
-          email="chefmao@genshinimpact.com"
-        />
-        <ContactItem
-          img={xianglingImg}
-          name="Xiangling"
-          phoneNumber="(890)-567-1234"
-          email="xiangling@genshinimpact.com"
-        />
-        <ContactItem
-          img={guobaImg}
-          name="Guoba"
-          phoneNumber="(747)-698-0450"
-          email="guoba@genshinimpact.com"
-        />
-      </div>
+      <ContactItem
+        img={chefMaoImg}
+        name="Chef Mao"
+        phoneNumber="(123)-456-7890"
+        email="chefmao@genshinimpact.com"
+      />
+      <ContactItem
+        img={xianglingImg}
+        name="Xiangling"
+        phoneNumber="(890)-567-1234"
+        email="xiangling@genshinimpact.com"
+      />
+      <ContactItem
+        img={guobaImg}
+        name="Guoba"
+        phoneNumber="(747)-698-0450"
+        email="guoba@genshinimpact.com"
+      />
     </section>
   )
 }

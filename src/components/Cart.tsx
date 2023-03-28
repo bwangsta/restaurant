@@ -16,9 +16,9 @@ function Cart() {
   })
 
   return (
-    <div>
-      <ul>{cartItems}</ul>
-      <p>Total: {totalPrice} Mora</p>
+    <>
+      <ul className="flex-1">{cartItems}</ul>
+      <p className="text-xl">Total: {totalPrice} Mora</p>
       <button
         className="btn-sm btn"
         onClick={() => dispatch({ type: "clear", id: 0 })}
@@ -26,7 +26,7 @@ function Cart() {
         Clear
       </button>
       <button className="btn-sm btn">Place Order</button>
-    </div>
+    </>
   )
 }
 

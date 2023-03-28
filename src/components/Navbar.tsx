@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { HiOutlineShoppingCart } from "react-icons/hi"
+import { HiOutlineShoppingBag } from "react-icons/hi"
 import guobaLogo from "../assets/img/guoba-logo.svg"
 
 function Navbar() {
@@ -18,12 +18,15 @@ function Navbar() {
           <Link to="/menu">Menu</Link>
           <Link to="/contact">Contact</Link>
         </div>
-        <Link to="/checkout">
+        <label
+          htmlFor="sidebar"
+          className="btn-ghost drawer-button btn-circle btn"
+        >
           <div className="indicator">
-            <HiOutlineShoppingCart className="text-2xl" />
+            <HiOutlineShoppingBag className="text-2xl" />
             <span className="badge badge-sm indicator-item">8</span>
           </div>
-        </Link>
+        </label>
       </nav>
     </header>
   )

@@ -5,13 +5,13 @@ function ContactItem(props: {
   email: string
 }) {
   return (
-    <article>
+    <article className="my-8">
       <img
         src={props.img}
         alt="Chef Mao"
         className="aspect-square rounded-2xl object-cover"
       ></img>
-      <div className="text-center">
+      <div>
         <p className="text-2xl">{props.name}</p>
         <p className="text-lg">{props.phoneNumber}</p>
         <p className="text-lg">{props.email}</p>

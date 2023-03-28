@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useState } from "react"
+import React, { createContext, useReducer } from "react"
 import data from "./data"
 import { Item } from "./types"
 import cartReducer from "./cartReducer"

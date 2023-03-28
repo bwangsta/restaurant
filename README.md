@@ -35,6 +35,7 @@ WIP
 - [x] Get menu data from a separate file and display all menu items
 - [x] Add search bar to filter menu items
 - [x] Add a checkout where users can add items to cart and remove items from cart
+- [x] Add a sidebar which displays all the items in the cart
 - [ ] Create a database that stores each menu item and the number of times a user "ordered" it
 - [ ] Display most popular dishes on home page based on the data
 - [ ] Add separate page for each dish. Include description, character favorites, recipes, etc.
