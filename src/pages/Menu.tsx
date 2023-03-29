@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import MenuItem from "../components/MenuItem"
 import Searchbar from "../components/Searchbar"
-import data from "../data"
+import menuData from "../data/menuData.json"
 
 function Menu() {
-  const [menuItems] = useState(data)
+  const [menuItems] = useState(menuData)
   const [query, setQuery] = useState("")
 
   const filteredItems = menuItems.filter((item) => {

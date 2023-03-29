@@ -1,18 +1,18 @@
-import { useContext } from "react"
-import { CartContext, CartDispatchContext } from "../CartContext"
+import { useCart, useCartDispatch } from "../context/CartContext"
 import CartItem from "./CartItem"
+import menuData from "../data/menuData.json"
 
 function Cart() {
-  const cart = useContext(CartContext)
-  const dispatch = useContext(CartDispatchContext)!
+  const cart = useCart()
+  const dispatch = useCartDispatch()
 
-  let totalPrice = 0
+  const totalPrice = cart.reduce((total, cartItem) => {
+    const item = menuData.find((item) => item.id === cartItem.id)
+    return total + (item?.price || 0) * cartItem.quantity
+  }, 0)
 
   const cartItems = cart.map((item) => {
-    if (item.amount > 0) {
-      totalPrice += item.price * item.amount
-      return <CartItem key={item.id} item={item} />
-    }
+    return <CartItem key={item.id} {...item} />
   })
 
   return (
@@ -21,7 +21,7 @@ function Cart() {
       <p className="text-xl">Total: {totalPrice} Mora</p>
       <button
         className="btn-sm btn"
-        onClick={() => dispatch({ type: "clear", id: 0 })}
+        onClick={() => dispatch({ type: "clear" })}
       >
         Clear
       </button>

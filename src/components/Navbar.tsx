@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom"
 import { HiOutlineShoppingBag } from "react-icons/hi"
 import guobaLogo from "../assets/img/guoba-logo.svg"
+import { useCart } from "../context/CartContext"
 
 function Navbar() {
+  const cart = useCart()
+
+  let itemQuantity = cart.reduce((total, cartItem) => {
+    return total + cartItem.quantity
+  }, 0)
+
   return (
     <header>
       <nav className="flex items-center justify-center py-4">
@@ -24,7 +31,9 @@ function Navbar() {
         >
           <div className="indicator">
             <HiOutlineShoppingBag className="text-2xl" />
-            <span className="badge badge-sm indicator-item">8</span>
+            <span className="badge badge-sm indicator-item">
+              {itemQuantity}
+            </span>
           </div>
         </label>
       </nav>

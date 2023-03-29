@@ -1,12 +1,9 @@
-export type Item = {
-  id: number,
-  name: string,
-  img: string,
-  price: number,
-  amount: number
+export type CartItem = {
+  id: number
+  quantity: number
 }
 
 export type CartAction = {
-  type: string,
-  id: number
+  type: string
+  id?: number
 }

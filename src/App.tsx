@@ -5,7 +5,7 @@ import Menu from "./pages/Menu"
 import Contact from "./pages/Contact"
 import Checkout from "./pages/Checkout"
 import Footer from "./components/Footer"
-import { CartProvider } from "./CartContext"
+import { CartProvider } from "./context/CartContext"
 import Sidebar from "./components/Sidebar"
 import { useState } from "react"
 

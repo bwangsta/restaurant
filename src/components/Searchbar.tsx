@@ -10,7 +10,7 @@ function Searchbar(props: {
       <HiOutlineSearch className="ml-4" />
       <input
         type="search"
-        className="flex rounded-2xl border-none p-2 outline-none"
+        className="flex flex-1 rounded-2xl border-none p-2 outline-none"
         value={props.query}
         onChange={(e) => props.handleInputChange(e)}
         placeholder="Search..."
