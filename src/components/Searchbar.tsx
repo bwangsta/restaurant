@@ -1,5 +1,5 @@
 import { ChangeEvent } from "react"
-import { HiOutlineSearch } from "react-icons/hi"
+import { FaSearch } from "react-icons/fa"
 
 function Searchbar(props: {
   query: string
@@ -7,7 +7,7 @@ function Searchbar(props: {
 }) {
   return (
     <div className="my-8 mx-auto flex max-w-2xl items-center rounded-2xl border-2 border-black">
-      <HiOutlineSearch className="ml-4" />
+      <FaSearch className="ml-4" />
       <input
         type="search"
         className="flex flex-1 rounded-2xl border-none p-2 outline-none"

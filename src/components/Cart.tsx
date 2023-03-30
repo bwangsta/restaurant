@@ -1,6 +1,7 @@
 import { useCart, useCartDispatch } from "../context/CartContext"
 import CartItem from "./CartItem"
 import menuData from "../data/menuData.json"
+import moraIcon from "../assets/img/mora.svg"
 
 function Cart() {
   const cart = useCart()
@@ -18,14 +19,17 @@ function Cart() {
   return (
     <>
       <ul className="flex-1">{cartItems}</ul>
-      <p className="text-xl">Total: {totalPrice} Mora</p>
+      <div className="flex items-center gap-2">
+        <p className="text-xl">Total:</p>
+        <img src={moraIcon} alt="Mora" className="w-10" />
+        <p className="text-xl">{totalPrice}</p>
+      </div>
       <button
         className="btn-sm btn"
         onClick={() => dispatch({ type: "clear" })}
       >
         Clear
       </button>
-      <button className="btn-sm btn">Place Order</button>
     </>
   )
 }

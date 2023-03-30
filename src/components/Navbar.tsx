@@ -30,7 +30,7 @@ function Navbar() {
           className="btn-ghost drawer-button btn-circle btn"
         >
           <div className="indicator">
-            <HiOutlineShoppingBag className="text-2xl" />
+            <HiOutlineShoppingBag size={24} />
             <span className="badge badge-sm indicator-item">
               {itemQuantity}
             </span>
